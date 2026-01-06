@@ -1,0 +1,8 @@
+name: Issues
+on: issues
+jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output GitHub contest
+        run: echo ${{toJson(github)}}
